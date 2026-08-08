@@ -2,9 +2,19 @@
 
 Static portfolio website for Irfan Nazar.
 
+## Structure
+
+```text
+irfannazar.com
+├── public
+│   ├── index.html
+│   └── assets
+└── wrangler.jsonc
+```
+
 ## Deploy
 
-This repository is a plain static site. Deploy the repository root to any static host:
+This repository is a plain static site. Deploy `public/` to any static host:
 
 - Vercel
 - Cloudflare Pages
@@ -12,4 +22,10 @@ This repository is a plain static site. Deploy the repository root to any static
 - GitHub Pages
 - Any cPanel/static web hosting
 
-The entry point is `index.html`; supporting files are in `assets/`.
+For Cloudflare Workers static assets, deploy with Wrangler from the repository root:
+
+```powershell
+npx wrangler deploy
+```
+
+The entry point is `public/index.html`; supporting files are in `public/assets/`.
