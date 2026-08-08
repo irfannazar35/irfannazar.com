@@ -28,4 +28,20 @@ For Cloudflare Workers static assets, deploy with Wrangler from the repository r
 npx wrangler deploy
 ```
 
+For GitHub Pages, this repository publishes `public/` with the workflow in `.github/workflows/pages.yml`.
+
+Custom domain:
+
+```text
+www.irfannazar.com
+```
+
+DNS record required at your domain provider:
+
+```text
+Type:  CNAME
+Name:  www
+Value: irfannazar35.github.io
+```
+
 The entry point is `public/index.html`; supporting files are in `public/assets/`.
