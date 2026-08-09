@@ -441,8 +441,8 @@
   padding: 28px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 360px;
+  justify-content: flex-start;
+  min-height: 320px;
   box-shadow: var(--shadow-sm);
 }
 
@@ -466,8 +466,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 6px;
-  margin-top: auto;
+  gap: 8px;
 }
 
 .expertise-card .chip {
@@ -512,6 +511,13 @@
   --card-surface: #FFFBEB;
   --card-pill: #FEF3C7;
   --card-border: #FDE68A;
+}
+
+.expertise-monitoring {
+  --card-accent: #4F46E5;
+  --card-surface: #EEF2FF;
+  --card-pill: #E0E7FF;
+  --card-border: #C7D2FE;
 }
 
 .expertise-field {
