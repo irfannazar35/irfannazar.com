@@ -26,10 +26,159 @@ body.channel-tool-page {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+.tool-site-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px clamp(16px, 4vw, 42px);
+  border-bottom: 1px solid var(--tool-line);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(14px);
+}
+
+.tool-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--tool-ink);
+  text-decoration: none;
+}
+
+.tool-brand img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.tool-brand strong,
+.tool-brand small {
+  display: block;
+}
+
+.tool-brand strong {
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.tool-brand small {
+  color: var(--tool-muted);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.tool-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.tool-nav a,
+.dept-link {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: var(--tool-ink);
+  padding: 0 10px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.tool-nav a:hover,
+.tool-nav a.active,
+.dept-link {
+  background: var(--tool-ink);
+  color: white;
+}
+
+.tools-showcase {
+  padding: clamp(28px, 5vw, 56px) clamp(16px, 4vw, 42px);
+}
+
+.tools-copy {
+  max-width: 980px;
+}
+
+.tools-copy h1 {
+  max-width: 880px;
+  margin: 10px 0 12px;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: 0.98;
+}
+
+.tools-copy p {
+  max-width: 760px;
+  color: var(--tool-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.tools-showcase .tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.tool-card {
+  display: flex;
+  min-height: 260px;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid var(--tool-line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.93);
+  box-shadow: 0 18px 44px rgba(20, 80, 52, 0.08);
+  padding: 20px;
+}
+
+.tool-card h2 {
+  margin: 0;
+  color: var(--tool-accent-dark);
+  font-size: 0.88rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tool-card ul {
+  display: grid;
+  gap: 11px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tool-card li {
+  border-bottom: 1px solid var(--tool-line);
+  padding-bottom: 9px;
+  color: var(--tool-ink);
+}
+
+.tool-card li:last-child {
+  border-bottom: 0;
+}
+
+.featured-tool {
+  border-color: rgba(24, 182, 111, 0.45);
+  background: linear-gradient(180deg, #ffffff, #eafaf1);
+}
+
 .hub-shell {
-  min-height: 100vh;
+  min-height: 80vh;
   display: grid;
   grid-template-columns: 320px minmax(0, 1fr);
+  border-top: 1px solid var(--tool-line);
 }
 
 .hub-sidebar {
@@ -495,6 +644,20 @@ body.channel-tool-page {
 }
 
 @media (max-width: 900px) {
+  .tool-site-header {
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .tool-nav {
+    justify-content: flex-start;
+  }
+
+  .tools-showcase .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hub-shell,
   .landing-intro,
   .manning-grid,

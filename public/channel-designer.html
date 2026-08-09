@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Irrigation Channel Design Tool | Irfan Nazar</title>
-  <meta name="description" content="Interactive Manning equation irrigation channel design tool by Irfan Nazar for circular, rectangular, and trapezoidal channels.">
+  <title>Tools & Irrigation Channel Design | Irfan Nazar</title>
+  <meta name="description" content="Tools page for Irfan Nazar with software expertise, technical stack, Irrigation Hub references, and an interactive Manning equation channel design calculator.">
   <link rel="canonical" href="https://www.irfannazar.com/channel-designer.html">
-  <meta property="og:title" content="Irrigation Channel Design Tool | Irfan Nazar">
-  <meta property="og:description" content="Design irrigation channels with Manning equation calculations, hydraulic details, and printable reports.">
+  <meta property="og:title" content="Tools & Irrigation Channel Design | Irfan Nazar">
+  <meta property="og:description" content="Explore Irfan Nazar's technical tools, irrigation references, and Manning equation channel design calculator.">
   <meta property="og:url" content="https://www.irfannazar.com/channel-designer.html">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,77 @@
   <link rel="stylesheet" href="css/channel-designer.css">
 </head>
 <body class="channel-tool-page" data-default-category="channel-design">
+  <header class="tool-site-header">
+    <a href="index.html#top" class="tool-brand" aria-label="Irfan Nazar Home">
+      <img src="assets/images/profile.jpg" alt="Irfan Nazar">
+      <span>
+        <strong>IRFAN NAZAR</strong>
+        <small>WATER RESOURCES &middot; HYDROINFORMATICS</small>
+      </span>
+    </a>
+
+    <nav class="tool-nav" aria-label="Portfolio navigation">
+      <a href="index.html#top">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="ihe-journey.html">IHE Journey</a>
+      <a href="index.html#expertise">Expertise</a>
+      <a href="index.html#work">Selected Work</a>
+      <a class="active" href="channel-designer.html">Irrigation Hub & Tools</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="public-alerts.html">Public Service Information</a>
+    </nav>
+  </header>
+
+  <section class="tools-showcase" aria-labelledby="toolsShowcaseTitle">
+    <div class="tools-copy">
+      <span class="eyebrow">Tools &amp; technical arsenal</span>
+      <h1 id="toolsShowcaseTitle">Engineering tools, digital workflows, and irrigation design support.</h1>
+      <p>This page brings together the portfolio tools section, software stack, Irrigation Hub library, and a practical channel design calculator for visitors working on conveyance and water-sector assignments.</p>
+    </div>
+
+    <div class="tools-grid">
+      <article class="tool-card">
+        <h2>Hydraulic Engineering</h2>
+        <ul>
+          <li>HEC-RAS 1D/2D Hydrodynamics</li>
+          <li>MIKE SHE / MIKE 11 Coupled Modeling</li>
+          <li>HEC-HMS, SOBEK &amp; RIBASIM</li>
+          <li>Computational Hydraulics &amp; River Basin Modeling</li>
+        </ul>
+      </article>
+
+      <article class="tool-card">
+        <h2>GIS &amp; Remote Sensing</h2>
+        <ul>
+          <li>QGIS Professional Desktop</li>
+          <li>ArcGIS Spatial Analyst</li>
+          <li>Google Earth Engine API</li>
+          <li>DGPS Survey Processing &amp; DEM Analysis</li>
+        </ul>
+      </article>
+
+      <article class="tool-card">
+        <h2>Data &amp; Programming</h2>
+        <ul>
+          <li>Python: Pandas, GeoPandas, rasterio</li>
+          <li>Google Apps Script &amp; Drive API</li>
+          <li>Decision Support Systems &amp; Data Visualization</li>
+          <li>AutoCAD Civil 3D, Primavera P6 &amp; MS Project</li>
+        </ul>
+      </article>
+
+      <article class="tool-card featured-tool">
+        <h2>Channel Design App</h2>
+        <ul>
+          <li>Manning equation calculator for irrigation channels</li>
+          <li>Circular, rectangular &amp; trapezoidal sections</li>
+          <li>Flow, velocity, hydraulic radius &amp; critical depth outputs</li>
+          <li>Printable report for design review</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
   <div class="hub-shell">
     <aside class="hub-sidebar" aria-label="Irrigation Hub tools">
       <div class="hub-brand">
@@ -28,7 +99,7 @@
         </div>
       </div>
 
-      <a class="back-link" href="index.html#tools">Back to portfolio tools</a>
+      <a class="back-link" href="index.html#top">Back to portfolio home</a>
 
       <div class="library-search">
         <label for="librarySearch">Search Library</label>
@@ -44,10 +115,7 @@
           <strong>Irrigation Channel Design</strong>
           <span>Built to show practical hydraulic design work and help visitors size channels.</span>
         </div>
-        <div class="hub-tabs" aria-label="Page shortcuts">
-          <button id="headerPortfolioButton" type="button">Portfolio</button>
-          <button id="headerContactButton" type="button">Contact</button>
-        </div>
+        <a class="dept-link" href="https://irrigation.punjab.gov.pk/" target="_blank" rel="noopener">Punjab Irrigation Dept</a>
       </header>
 
       <section id="windowGrid" class="window-grid" aria-live="polite"></section>
