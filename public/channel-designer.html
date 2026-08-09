@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irrigation Channel Design Tool | Irfan Nazar</title>
+  <meta name="description" content="Interactive Manning equation irrigation channel design tool by Irfan Nazar for circular, rectangular, and trapezoidal channels.">
+  <link rel="canonical" href="https://www.irfannazar.com/channel-designer.html">
+  <meta property="og:title" content="Irrigation Channel Design Tool | Irfan Nazar">
+  <meta property="og:description" content="Design irrigation channels with Manning equation calculations, hydraulic details, and printable reports.">
+  <meta property="og:url" content="https://www.irfannazar.com/channel-designer.html">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/channel-designer.css">
+</head>
+<body class="channel-tool-page" data-default-category="channel-design">
+  <div class="hub-shell">
+    <aside class="hub-sidebar" aria-label="Irrigation Hub tools">
+      <div class="hub-brand">
+        <button id="brandHomeButton" type="button" aria-label="Open Irrigation Hub home">
+          <span class="brand-mark">IN</span>
+        </button>
+        <div>
+          <strong>Irrigation Hub</strong>
+          <span>Design tools and references</span>
+        </div>
+      </div>
+
+      <a class="back-link" href="index.html#tools">Back to portfolio tools</a>
+
+      <div class="library-search">
+        <label for="librarySearch">Search Library</label>
+        <input id="librarySearch" type="search" placeholder="Search canal design, PPRA, PC-I...">
+      </div>
+
+      <nav id="categoryList" class="category-list" aria-label="Tool categories"></nav>
+    </aside>
+
+    <main class="hub-main">
+      <header class="hub-topbar">
+        <div>
+          <strong>Irrigation Channel Design</strong>
+          <span>Built to show practical hydraulic design work and help visitors size channels.</span>
+        </div>
+        <div class="hub-tabs" aria-label="Page shortcuts">
+          <button id="headerPortfolioButton" type="button">Portfolio</button>
+          <button id="headerContactButton" type="button">Contact</button>
+        </div>
+      </header>
+
+      <section id="windowGrid" class="window-grid" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <aside id="assistantWidget" class="assistant-widget collapsed" aria-label="Irrigation Hub assistant">
+    <header class="assistant-header">
+      <strong>Ask AI Assistant</strong>
+      <button id="assistantHeaderToggle" type="button" aria-label="Collapse assistant">&times;</button>
+    </header>
+    <div class="assistant-body">
+      <div id="chatMessages" class="chat-messages"></div>
+      <div id="promptChips" class="prompt-chips" aria-label="Example questions"></div>
+      <form id="chatForm" class="chat-form">
+        <input id="chatInput" type="text" placeholder="Ask about canal design or rules">
+        <button type="submit">Ask</button>
+      </form>
+      <button id="clearChat" class="clear-chat" type="button">Clear Chat</button>
+    </div>
+  </aside>
+  <button id="assistantToggle" class="assistant-toggle" type="button" aria-expanded="false" aria-label="Open assistant">AI</button>
+
+  <script src="js/irrigation-hub-app.js"></script>
+</body>
+</html>
