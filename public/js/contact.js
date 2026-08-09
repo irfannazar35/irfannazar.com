@@ -5,6 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('portfolioContactForm');
   const formFeedback = document.getElementById('formFeedback');
+  const submitBtn = document.getElementById('contactSubmitBtn');
   const copyEmailBtn = document.getElementById('copyEmailBtn');
 
   if (copyEmailBtn) {
@@ -25,13 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       
       const name = document.getElementById('contactName').value.trim();
       const email = document.getElementById('contactEmail').value.trim();
       const subject = document.getElementById('contactSubject').value;
       const message = document.getElementById('contactMessage').value.trim();
+      const endpoint = contactForm.getAttribute('action');
 
       if (!name || !email || !message) {
         if (formFeedback) {
@@ -41,28 +43,56 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      const inboxEmail = 'irfannazar35@gmail.com';
-      const mailSubject = `Portfolio Inquiry: ${subject}`;
-      const mailBody = [
-        `Inquiry Topic: ${subject}`,
-        `Name: ${name}`,
-        `Sender Email: ${email}`,
-        '',
-        'Message:',
-        message,
-        '',
-        'Auto acknowledgement shown to sender:',
-        'Your query has been received and will be responded back.'
-      ].join('\n');
-
-      const mailtoUrl = `mailto:${inboxEmail}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
-      window.location.href = mailtoUrl;
-
       if (formFeedback) {
-        formFeedback.style.color = 'var(--accent-emerald)';
-        formFeedback.innerHTML = `Thank you, ${name}. Your query has been received and will be responded back. If your email app did not open, please email ${inboxEmail}.`;
+        formFeedback.style.color = 'var(--text-muted)';
+        formFeedback.textContent = 'Sending your inquiry...';
       }
-      contactForm.reset();
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.style.opacity = '0.72';
+        submitBtn.style.cursor = 'wait';
+      }
+
+      const payload = new FormData(contactForm);
+      payload.set('_subject', `Portfolio Inquiry: ${subject}`);
+      payload.set('submitted_from', window.location.href);
+
+      try {
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json'
+          },
+          body: payload
+        });
+
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok || result.success === false) {
+          throw new Error(result.message || 'The inquiry could not be sent.');
+        }
+
+        if (formFeedback) {
+          formFeedback.style.color = 'var(--accent-emerald)';
+          formFeedback.textContent = `Thank you, ${name}. Your inquiry has been sent successfully.`;
+        }
+        contactForm.reset();
+      } catch (error) {
+        console.error('Inquiry send failed:', error);
+        if (formFeedback) {
+          formFeedback.style.color = 'var(--accent-amber)';
+          formFeedback.textContent = 'Sorry, the inquiry could not be sent right now. Please try again in a moment.';
+        }
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send Inquiry Message →';
+          submitBtn.style.opacity = '';
+          submitBtn.style.cursor = '';
+        }
+      }
     });
   }
 });

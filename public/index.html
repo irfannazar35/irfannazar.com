@@ -522,20 +522,25 @@
           <div class="card" style="padding:36px;">
             <h3 style="font-size:1.35rem; margin-bottom:20px;">Send Inquiry</h3>
 
-            <form class="contact-form" id="portfolioContactForm">
+            <form class="contact-form" id="portfolioContactForm" action="https://formsubmit.co/ajax/irfannazar35@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="New Portfolio Inquiry - irfannazar.com">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none;">
+
               <div class="form-group">
                 <label for="contactName">Your Name</label>
-                <input type="text" id="contactName" placeholder="Engr. Alex Smith" required>
+                <input type="text" id="contactName" name="name" placeholder="Engr. Alex Smith" autocomplete="name" required>
               </div>
 
               <div class="form-group">
                 <label for="contactEmail">Email Address</label>
-                <input type="email" id="contactEmail" placeholder="your.email@example.com" required>
+                <input type="email" id="contactEmail" name="email" placeholder="your.email@example.com" autocomplete="email" required>
               </div>
 
               <div class="form-group">
                 <label for="contactSubject">Inquiry Topic</label>
-                <select id="contactSubject">
+                <select id="contactSubject" name="inquiry_topic">
                   <option value="Seeking Information">Seeking Information</option>
                   <option value="Suggestion">Suggestion</option>
                   <option value="Data Correction Request">Data Correction Request</option>
@@ -545,11 +550,11 @@
 
               <div class="form-group">
                 <label for="contactMessage">Message / Project Brief</label>
-                <textarea id="contactMessage" rows="4" placeholder="Write your inquiry, suggestion, correction request, or message..." required></textarea>
+                <textarea id="contactMessage" name="message" rows="4" placeholder="Write your inquiry, suggestion, correction request, or message..." required></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary" style="justify-content:center; margin-top:8px;">Send Inquiry Message →</button>
-              <div id="formFeedback" style="font-family:'JetBrains Mono', monospace; font-size:0.8rem; margin-top:10px;"></div>
+              <button type="submit" id="contactSubmitBtn" class="btn btn-primary" style="justify-content:center; margin-top:8px;">Send Inquiry Message →</button>
+              <div id="formFeedback" role="status" aria-live="polite" style="font-family:'JetBrains Mono', monospace; font-size:0.8rem; margin-top:10px;"></div>
             </form>
           </div>
         </div>
