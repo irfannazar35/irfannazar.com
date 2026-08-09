@@ -121,6 +121,34 @@ section.alt-bg {
   line-height: 1.6;
 }
 
+@media (max-width: 640px) {
+  html {
+    font-size: 15px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  section {
+    padding: 56px 0;
+  }
+
+  .section-header {
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .section-header h1,
+  .section-header h2 {
+    overflow-wrap: anywhere;
+  }
+
+  .section-header p {
+    font-size: 0.98rem;
+  }
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

@@ -201,6 +201,8 @@
 
     .gauge-table-wrap {
       overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior-x: contain;
     }
 
     .gauge-table {
@@ -294,6 +296,51 @@
       .gauge-table-header {
         flex-direction: column;
       }
+
+      .source-link {
+        text-align: center;
+        white-space: normal;
+      }
+    }
+
+    @media (max-width: 600px) {
+      main section {
+        padding: 40px 0 64px !important;
+      }
+
+      .notice-panel,
+      .gauge-summary-card,
+      .priority-card,
+      .public-note {
+        padding: 16px;
+      }
+
+      .gauge-dashboard {
+        gap: 18px;
+      }
+
+      .gauge-table-header {
+        padding: 16px;
+      }
+
+      .source-link {
+        width: 100%;
+      }
+
+      .gauge-table {
+        min-width: 820px;
+        font-size: 0.82rem;
+      }
+
+      .gauge-table th,
+      .gauge-table td {
+        padding: 9px 10px;
+      }
+
+      .status-pill {
+        font-size: 0.68rem;
+        padding: 4px 8px;
+      }
     }
   </style>
 </head>
@@ -324,7 +371,7 @@
       </nav>
 
       <div class="nav-actions">
-        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">☰</button>
+        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-controls="navMenu" aria-expanded="false">☰</button>
       </div>
     </div>
   </header>

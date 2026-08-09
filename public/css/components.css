@@ -27,6 +27,7 @@
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
+  min-width: 0;
 }
 
 .brand-icon {
@@ -69,6 +70,7 @@
 .brand-text {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .brand-name {
@@ -77,6 +79,7 @@
   font-size: 1.05rem;
   letter-spacing: -0.01em;
   color: var(--text-main);
+  white-space: nowrap;
 }
 
 .brand-title {
@@ -85,6 +88,9 @@
   color: var(--accent-amber);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Nav Links */
@@ -246,12 +252,14 @@
   letter-spacing: 0.05em;
   margin-bottom: 20px;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .tech-titleblock span {
   padding: 6px 14px;
   border-right: 1px solid var(--border-line);
   color: var(--text-muted);
+  min-width: 0;
 }
 
 .tech-titleblock span:last-child {
@@ -360,17 +368,25 @@
 
 /* Responsive Mobile Navigation */
 @media (max-width: 900px) {
+  .topbar-inner {
+    height: 64px;
+  }
+
   .nav-menu {
     display: none;
     position: absolute;
-    top: 72px;
-    left: 0;
-    right: 0;
+    top: 64px;
+    left: 12px;
+    right: 12px;
+    max-height: calc(100vh - 84px);
+    overflow-y: auto;
     background: var(--bg-secondary);
-    border-bottom: 1px solid var(--border-line);
+    border: 1px solid var(--border-line);
+    border-radius: 8px;
     flex-direction: column;
-    padding: 24px;
-    gap: 16px;
+    align-items: stretch;
+    padding: 12px;
+    gap: 8px;
     box-shadow: var(--shadow-md);
   }
 
@@ -378,7 +394,53 @@
     display: flex;
   }
 
+  .nav-menu a {
+    display: block;
+    width: 100%;
+    padding: 11px 12px;
+    text-align: left;
+    white-space: normal;
+  }
+
   .mobile-toggle {
     display: flex;
+  }
+}
+
+@media (max-width: 560px) {
+  .brand-logo {
+    gap: 10px;
+  }
+
+  .brand-name {
+    font-size: 0.98rem;
+  }
+
+  .brand-title {
+    max-width: 180px;
+    font-size: 0.62rem;
+  }
+
+  .tech-titleblock {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tech-titleblock span {
+    flex: 1 1 auto;
+    padding: 6px 10px;
+    font-size: 0.66rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .brand-title {
+    display: none;
+  }
+
+  .brand-avatar {
+    width: 38px;
+    height: 38px;
   }
 }
