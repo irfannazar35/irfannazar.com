@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Public Service Information - Small Dams Division, Jhelum</title>
+  <meta name="description" content="Daily small dam gauge information, public service notices, advisories, and official updates from the Executive Engineer Office, Small Dams Division, Jhelum.">
+  <meta name="keywords" content="Small Dams Division Jhelum, Punjab Irrigation Department, dam gauge report, reservoir level information, Jhelum dams, public service information, Irfan Nazar">
+  <meta name="author" content="Irfan Nazar">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.irfannazar.com/public-alerts.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Irfan Nazar Portfolio">
+  <meta property="og:title" content="Public Service Information - Small Dams Division, Jhelum">
+  <meta property="og:description" content="Daily small dam gauge information and public service notices from Small Dams Division, Jhelum.">
+  <meta property="og:url" content="https://www.irfannazar.com/public-alerts.html">
+  <meta property="og:image" content="https://www.irfannazar.com/assets/images/punjab-irrigation-logo.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Public Service Information - Small Dams Division, Jhelum">
+  <meta name="twitter:description" content="Daily small dam gauge information and public service notices for Jhelum small dams.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Public Service Information - Small Dams Division, Jhelum",
+    "url": "https://www.irfannazar.com/public-alerts.html",
+    "description": "Daily small dam gauge information, public service notices, advisories, and official updates from Small Dams Division, Jhelum.",
+    "author": {
+      "@type": "Person",
+      "name": "Irfan Nazar",
+      "url": "https://www.irfannazar.com/"
+    },
+    "publisher": {
+      "@type": "GovernmentOrganization",
+      "name": "Punjab Irrigation Department"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/themes.css?v=20260809-green2">
+  <link rel="stylesheet" href="css/main.css?v=20260809-green2">
+  <link rel="stylesheet" href="css/components.css?v=20260809-green2">
+  <link rel="stylesheet" href="css/sections.css?v=20260809-green2">
+  <style>
+    .info-shell {
+      display: grid;
+      grid-template-columns: 0.72fr 1.28fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    .notice-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border-line);
+      border-radius: 8px;
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .notice-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+    }
+
+    .notice-meta div {
+      border-bottom: 1px solid var(--border-line);
+      padding-bottom: 12px;
+    }
+
+    .notice-meta span {
+      display: block;
+      color: var(--text-subtle);
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+
+    .gauge-dashboard {
+      display: grid;
+      gap: 24px;
+    }
+
+    .gauge-summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .gauge-summary-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-line);
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .gauge-summary-card strong {
+      display: block;
+      color: var(--text-main);
+      font-size: clamp(1.65rem, 2.8vw, 2.4rem);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .gauge-summary-card span {
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.74rem;
+      text-transform: uppercase;
+    }
+
+    .priority-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .priority-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-line);
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .priority-card.level-watch {
+      border-color: #86EFAC;
+      background: #F0FDF4;
+    }
+
+    .priority-card.level-rain {
+      border-color: #BAE6FD;
+      background: #F0F9FF;
+    }
+
+    .priority-card.level-note {
+      border-color: #DDD6FE;
+      background: #FAF5FF;
+    }
+
+    .priority-card .tag {
+      display: inline-flex;
+      color: var(--accent-cyan);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .priority-card h3 {
+      font-size: 1.08rem;
+      margin-bottom: 8px;
+    }
+
+    .priority-card p {
+      color: var(--text-muted);
+      font-size: 0.93rem;
+    }
+
+    .gauge-table-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+
+    .gauge-table-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 22px;
+      border-bottom: 1px solid var(--border-line);
+      background: #F8FCF9;
+    }
+
+    .gauge-table-header h2 {
+      font-size: 1.3rem;
+      margin-bottom: 6px;
+    }
+
+    .gauge-table-header p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    .source-link {
+      white-space: nowrap;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: #FFFFFF;
+      background: var(--accent-cyan);
+      border-radius: 8px;
+      padding: 9px 12px;
+      text-decoration: none;
+    }
+
+    .gauge-table-wrap {
+      overflow-x: auto;
+    }
+
+    .gauge-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 920px;
+      font-size: 0.9rem;
+    }
+
+    .gauge-table th,
+    .gauge-table td {
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-line);
+      vertical-align: top;
+    }
+
+    .gauge-table th {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--text-subtle);
+      text-transform: uppercase;
+      background: #F8FCF9;
+    }
+
+    .gauge-table td.num {
+      font-family: 'JetBrains Mono', monospace;
+      white-space: nowrap;
+    }
+
+    .gauge-table tr.rain-row td {
+      background: #FFF1E8;
+    }
+
+    .gauge-table tr.rain-row td:first-child {
+      border-left: 3px solid #F97316;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+    .status-high {
+      color: #14532D;
+      background: #DCFCE7;
+      border: 1px solid #86EFAC;
+    }
+
+    .status-near {
+      color: #92400E;
+      background: #FEF3C7;
+      border: 1px solid #FCD34D;
+    }
+
+    .status-normal {
+      color: #075985;
+      background: #E0F2FE;
+      border: 1px solid #BAE6FD;
+    }
+
+    .public-note {
+      background: #FFFFFF;
+      border: 1px solid var(--border-line);
+      border-left: 4px solid var(--accent-cyan);
+      border-radius: 8px;
+      padding: 18px 20px;
+      color: var(--text-muted);
+    }
+
+    .public-note strong {
+      color: var(--text-main);
+    }
+
+    @media (max-width: 900px) {
+      .info-shell {
+        grid-template-columns: 1fr;
+      }
+
+      .gauge-summary-grid,
+      .priority-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gauge-table-header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-bg-overlay" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand-logo" aria-label="Irfan Nazar Home">
+        <img src="assets/images/profile.jpg" alt="Irfan Nazar" class="brand-avatar" width="42" height="42" style="width:42px; height:42px; max-width:42px; max-height:42px; object-fit:cover; object-position:center 18%; border-radius:50%; flex:0 0 42px;">
+        <div class="brand-text">
+          <span class="brand-name">IRFAN NAZAR</span>
+          <span class="brand-title">WATER RESOURCES · HYDROINFORMATICS</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="ihe-journey.html">IHE Journey</a></li>
+          <li><a href="index.html#expertise">Expertise</a></li>
+          <li><a href="index.html#work">Selected Work</a></li>
+          <li><a href="index.html#tools">Tools</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="public-alerts.html" class="active">Public Service Information</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section style="padding: 64px 0 96px;">
+      <div class="container">
+        <a href="index.html" style="font-family:'JetBrains Mono', monospace; font-size:0.82rem; color:var(--accent-cyan); display:inline-flex; align-items:center; gap:6px; margin-bottom:24px;">
+          ← Return to Main Portfolio
+        </a>
+
+        <div class="section-header" style="margin-bottom: 32px;">
+          <div class="tech-titleblock">
+            <span>PUBLIC SERVICE</span><span>SMALL DAMS DIVISION</span><span>JHELUM</span>
+          </div>
+          <h1 style="font-size: clamp(2rem, 3.8vw, 3.2rem); font-weight:700;">Daily Small Dam Gauge Information</h1>
+          <p>Public reservoir level information for Small Dams Division, Jhelum, based on the daily gauge report dated 08.08.2026 at 6:00 PM.</p>
+        </div>
+
+        <div class="info-shell">
+          <aside class="notice-panel">
+            <h2 style="font-size:1.25rem; margin-bottom:18px;">Report Details</h2>
+            <div class="notice-meta">
+              <div>
+                <span>Status</span>
+                Daily gauge information published
+              </div>
+              <div>
+                <span>Gauge Date</span>
+                08.08.2026, 6:00 PM
+              </div>
+              <div>
+                <span>Issuing Office</span>
+                Executive Engineer, Small Dams Division
+              </div>
+              <div>
+                <span>Department</span>
+                Punjab Irrigation Department
+              </div>
+              <div>
+                <span>Contact</span>
+                <a href="mailto:irfannazar35@gmail.com" style="color:var(--accent-cyan); text-decoration:underline;">irfannazar35@gmail.com</a>
+              </div>
+              <div>
+                <span>Source File</span>
+                <a href="assets/docs/gauges%2008.08.2026.pdf" target="_blank" rel="noopener" style="color:var(--accent-cyan); text-decoration:underline;">View original PDF</a>
+              </div>
+            </div>
+          </aside>
+
+          <article class="gauge-dashboard">
+            <div class="gauge-summary-grid">
+              <div class="gauge-summary-card">
+                <strong>16</strong>
+                <span>Small dams reported</span>
+              </div>
+              <div class="gauge-summary-card">
+                <strong>6</strong>
+                <span>At or above NPL</span>
+              </div>
+              <div class="gauge-summary-card">
+                <strong>25.45</strong>
+                <span>Highest rainfall mm</span>
+              </div>
+              <div class="gauge-summary-card">
+                <strong>3</strong>
+                <span>Rainfall entries</span>
+              </div>
+            </div>
+
+            <div class="priority-grid">
+              <div class="priority-card level-watch">
+                <span class="tag">Level watch</span>
+                <h3>6 dams at or above NPL</h3>
+                <p>Tainpura I, Tainpura II, Domeli, Gurah Uttam Singh, Ugahaun, and Phalina are at normal pond level or slightly above it.</p>
+              </div>
+              <div class="priority-card level-rain">
+                <span class="tag">Rainfall</span>
+                <h3>Domeli recorded 25.45 mm</h3>
+                <p>Rainfall was reported at Domeli, Gurah Uttam Singh, and Phalina. Other entries show no rainfall value in the source report.</p>
+              </div>
+              <div class="priority-card level-note">
+                <span class="tag">Public note</span>
+                <h3>Monitor local nullah flows</h3>
+                <p>Residents near downstream channels should stay attentive during rainfall periods and follow official field instructions.</p>
+              </div>
+            </div>
+
+            <div class="public-note">
+              <strong>Note:</strong> DSL means Dead Storage Level, NPL means Normal Pond Level, and HFL means High Flood Level. Status is calculated from present pond level compared with NPL.
+            </div>
+
+            <div class="gauge-table-card">
+              <div class="gauge-table-header">
+                <div>
+                  <h2>Daily Gauges</h2>
+                  <p>Small Dams Division, Jhelum - dated 08.08.2026 at 6:00 PM. Rows highlighted in peach recorded rainfall during 9:00 AM to 6:00 PM.</p>
+                </div>
+                <a class="source-link" href="assets/docs/gauges%2008.08.2026.pdf" target="_blank" rel="noopener">Open Source PDF</a>
+              </div>
+              <div class="gauge-table-wrap">
+                <table class="gauge-table">
+                  <thead>
+                    <tr>
+                      <th>Dam</th>
+                      <th>Nullah / River</th>
+                      <th>DSL ft</th>
+                      <th>NPL ft</th>
+                      <th>HFL ft</th>
+                      <th>Present ft</th>
+                      <th>Vs NPL</th>
+                      <th>Rain mm</th>
+                      <th>Spill cusec</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Jammergal Dam</td><td>Jammargal Kas</td><td class="num">879.25</td><td class="num">890.81</td><td class="num">897.00</td><td class="num">889.60</td><td class="num">-1.21</td><td class="num">-</td><td class="num">-</td><td><span class="status-pill status-normal">Below NPL</span></td></tr>
+                    <tr><td>Shah Habib Dam</td><td>Jammargal Kas</td><td class="num">902.00</td><td class="num">918.40</td><td class="num">920.43</td><td class="num">907.10</td><td class="num">-11.30</td><td class="num">-</td><td class="num">-</td><td><span class="status-pill status-normal">Below NPL</span></td></tr>
+                    <tr><td>Tainpura Dam-I</td><td>Tainpura Kas</td><td class="num">959.00</td><td class="num">1000.00</td><td class="num">1007.00</td><td class="num">1000.00</td><td class="num">+0.00</td><td class="num">-</td><td class="num">-</td><td><span class="status-pill status-high">At NPL</span></td></tr>
+                    <tr><td>Tainpura Dam-II</td><td>Tainpura Kas</td><td class="num">989.00</td><td class="num">1018.00</td><td class="num">1021.00</td><td class="num">1018.00</td><td class="num">+0.00</td><td class="num">-</td><td class="num">-</td><td><span class="status-pill status-high">At NPL</span></td></tr>
+                    <tr><td>Lehri Dam</td><td>Potha wala Kas</td><td class="num">959.00</td><td class="num">1000.00</td><td class="num">1007.00</td><td class="num">994.00</td><td class="num">-6.00</td><td class="num">-</td><td class="num">-</td><td><span class="status-pill status-normal">Below NPL</span></td></tr>
+                    <tr><td>Pandori Dam</td><td>Potha Kas</td><td class="num">984.00</td><td class="num">1013.50</td><td class="num">1026.63</td><td class="num">993.00</td><td class="num">-20.50</td><td class="num">-</td><td class="num">-</td><td><span class="status-pill status-normal">Below NPL</span></td></tr>
+                    <tr><td>Garat Dam</td><td>Garat Kas</td><td class="num">922.50</td><td class="num">951.00</td><td class="num">955.50</td><td class="num">935.00</td><td class="num">-16.00</td><td class="num">-</td><td class="num">-</td><td><span class="status-pill status-normal">Below NPL</span></td></tr>
+                    <tr class="rain-row"><td>Domeli Dam</td><td>Junction of Pamal and Nili Kas</td><td class="num">1153.00</td><td class="num">1175.00</td><td class="num">1188.00</td><td class="num">1175.10</td><td class="num">+0.10</td><td class="num">25.45</td><td class="num">-</td><td><span class="status-pill status-high">Above NPL</span></td></tr>
+                    <tr><td>Fatehpur Dam</td><td>Nabnawala Kas</td><td class="num">1537.00</td><td class="num">1543.00</td><td class="num">1547.00</td><td class="num">1542.40</td><td class="num">-0.60</td><td class="num">-</td><td class="num">-</td><td><span class="status-pill status-near">Near NPL</span></td></tr>
+                    <tr class="rain-row"><td>Gurah Uttam Singh</td><td>Ghan Khas</td><td class="num">1373.00</td><td class="num">1391.00</td><td class="num">1400.00</td><td class="num">1391.16</td><td class="num">+0.16</td><td class="num">19.00</td><td class="num">-</td><td><span class="status-pill status-high">Above NPL</span></td></tr>
+                    <tr><td>Salial Dam</td><td>Sore Kas</td><td class="num">1118.75</td><td class="num">1147.00</td><td class="num">1153.00</td><td class="num">1136.50</td><td class="num">-10.50</td><td class="num">-</td><td class="num">-</td><td><span class="status-pill status-normal">Below NPL</span></td></tr>
+                    <tr><td>Dungi Dam</td><td>Huchiara Kas</td><td class="num">1490.00</td><td class="num">1502.50</td><td class="num">1507.40</td><td class="num">1493.90</td><td class="num">-8.60</td><td class="num">-</td><td class="num">-</td><td><span class="status-pill status-normal">Below NPL</span></td></tr>
+                    <tr><td>Nirali Dam</td><td>Nirali Kas</td><td class="num">1700.50</td><td class="num">1715.00</td><td class="num">1722.00</td><td class="num">1706.50</td><td class="num">-8.50</td><td class="num">-</td><td class="num">-</td><td><span class="status-pill status-normal">Below NPL</span></td></tr>
+                    <tr><td>Ugahaun Dam</td><td>Krumb Nullah</td><td class="num">1572.25</td><td class="num">1594.00</td><td class="num">1601.00</td><td class="num">1594.00</td><td class="num">+0.00</td><td class="num">-</td><td class="num">-</td><td><span class="status-pill status-high">At NPL</span></td></tr>
+                    <tr class="rain-row"><td>Phalina Dam</td><td>Phalina Kas</td><td class="num">1630.60</td><td class="num">1651.90</td><td class="num">1656.60</td><td class="num">1652.00</td><td class="num">+0.10</td><td class="num">11.60</td><td class="num">-</td><td><span class="status-pill status-high">Above NPL</span></td></tr>
+                    <tr><td>Mohra Shera Dam</td><td>Wadala Kas</td><td class="num">1536.00</td><td class="num">1548.00</td><td class="num">1556.00</td><td class="num">1542.50</td><td class="num">-5.50</td><td class="num">-</td><td class="num">-</td><td><span class="status-pill status-normal">Below NPL</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="background:var(--bg-primary); border-top:1px solid var(--border-line); padding:32px 0;">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; font-family:'JetBrains Mono', monospace; font-size:0.78rem; color:var(--text-subtle);">
+      <span>© 2026 IRFAN NAZAR · EXECUTIVE ENGINEER</span>
+      <span>SMALL DAMS DIVISION · JHELUM · PUNJAB IRRIGATION DEPARTMENT</span>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

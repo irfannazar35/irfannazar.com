@@ -1,0 +1,41 @@
+/* ==========================================================================
+   SINGLE LIGHT GREEN THEME
+   ========================================================================== */
+
+:root,
+[data-theme="light"],
+[data-theme="dark"] {
+  --bg-primary: #F7FBF7;
+  --bg-secondary: #EEF7F0;
+  --bg-tertiary: #DFF0E4;
+  --bg-glass: rgba(247, 251, 247, 0.94);
+  --bg-card: #FFFFFF;
+
+  --text-main: #123326;
+  --text-muted: #4D665B;
+  --text-subtle: #6F8378;
+  --text-brand: #123326;
+
+  --accent-cyan: #22C55E;
+  --accent-teal: #16A34A;
+  --accent-amber: #15803D;
+  --accent-amber-glow: rgba(34, 197, 94, 0.16);
+  --accent-blue: #22C55E;
+  --accent-emerald: #16A34A;
+
+  --border-line: #CFE4D5;
+  --border-active: #86EFAC;
+  --border-amber: #86EFAC;
+
+  --grid-line: rgba(34, 197, 94, 0.055);
+
+  --shadow-sm: 0 2px 8px rgba(18, 51, 38, 0.06);
+  --shadow-md: 0 10px 24px rgba(18, 51, 38, 0.1);
+  --shadow-lg: 0 18px 42px rgba(18, 51, 38, 0.14);
+  --shadow-glow: 0 0 0 4px rgba(34, 197, 94, 0.1);
+
+  --canvas-water: rgba(34, 197, 94, 0.18);
+  --canvas-water-stroke: #16A34A;
+  --canvas-dam: #94A3B8;
+  --canvas-grid: rgba(18, 51, 38, 0.08);
+}
