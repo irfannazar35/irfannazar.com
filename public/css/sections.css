@@ -507,6 +507,14 @@
   --card-border: #DDD6FE;
 }
 
+.expertise-delivery {
+  --card-accent: #B45309;
+  --card-surface: #FFFBEB;
+  --card-pill: #FEF3C7;
+  --card-border: #FDE68A;
+  grid-column: span 2;
+}
+
 /* ---------- SELECTED WORK / PROJECTS ---------- */
 .project-filter-bar {
   display: flex;
@@ -849,6 +857,10 @@
   .institution-stack-item.primary img {
     width: min(220px, 100%);
     margin: 0 auto;
+  }
+
+  .expertise-delivery {
+    grid-column: auto;
   }
 
   .hero-section {
