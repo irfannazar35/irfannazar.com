@@ -2127,11 +2127,15 @@ function setupAssistantWidget() {
   addMessage("assistant", "Hi, I am Ask AI Assistant. Ask me about a rule, manual, document, or tool and I will search the hub library, cite sources, and open the related page where possible.");
 }
 
-librarySearch.addEventListener("input", renderCategories);
-brandHomeButton?.addEventListener("click", goHome);
-headerPortfolioButton?.addEventListener("click", renderPortfolioPage);
-headerContactButton?.addEventListener("click", () => openRuleWindow("contact"));
+if (document.body?.dataset.toolMode === "channel-only") {
+  renderIrrigationChannelDesign();
+} else {
+  librarySearch.addEventListener("input", renderCategories);
+  brandHomeButton?.addEventListener("click", goHome);
+  headerPortfolioButton?.addEventListener("click", renderPortfolioPage);
+  headerContactButton?.addEventListener("click", () => openRuleWindow("contact"));
 
-setupAssistantWidget();
-renderCategories();
-renderWindows();
+  setupAssistantWidget();
+  renderCategories();
+  renderWindows();
+}
