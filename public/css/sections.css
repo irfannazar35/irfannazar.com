@@ -515,6 +515,14 @@
   grid-column: span 2;
 }
 
+.expertise-field {
+  --card-accent: #0F766E;
+  --card-surface: #F0FDFA;
+  --card-pill: #CCFBF1;
+  --card-border: #99F6E4;
+  grid-column: span 2;
+}
+
 /* ---------- SELECTED WORK / PROJECTS ---------- */
 .project-filter-bar {
   display: flex;
@@ -859,7 +867,8 @@
     margin: 0 auto;
   }
 
-  .expertise-delivery {
+  .expertise-delivery,
+  .expertise-field {
     grid-column: auto;
   }
 
