@@ -4,27 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IHE Journey — Irfan Nazar</title>
-  <meta name="description" content="IHE Delft journey, hydroinformatics study, research, and professional learning notes for Irfan Nazar.">
-  <meta name="keywords" content="Irfan Nazar IHE Delft, Hydroinformatics, Water Science and Engineering, IHE Delft Institute for Water Education, MSc Hydroinformatics, Nature-Based Solutions, MIKE SHE, MIKE 11">
+  <meta name="description" content="IHE Delft MSc journey of Irfan Nazar, including Water Science and Engineering, Hydroinformatics, 106 ECTS, thesis research on Nature-Based Solutions, river flood analysis, DSS, and water management modelling.">
+  <meta name="keywords" content="Irfan Nazar IHE Delft, Hydroinformatics, Water Science and Engineering, IHE Delft Institute for Water Education, MSc Hydroinformatics, Nature-Based Solutions, River Flood Analysis, Decision Support Systems, Computational Hydraulics, River Basin Modelling">
   <meta name="author" content="Irfan Nazar">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://www.irfannazar.com/ihe-journey.html">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Irfan Nazar Portfolio">
   <meta property="og:title" content="IHE Journey — Irfan Nazar">
-  <meta property="og:description" content="IHE Delft hydroinformatics study, research, and professional learning notes for Irfan Nazar.">
+  <meta property="og:description" content="IHE Delft MSc Water Science and Engineering journey: hydroinformatics, modelling, decision support systems, flood risk, and Nature-Based Solutions thesis research.">
   <meta property="og:url" content="https://www.irfannazar.com/ihe-journey.html">
   <meta property="og:image" content="https://www.irfannazar.com/assets/images/ihe-delft-logo.png">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="IHE Journey — Irfan Nazar">
-  <meta name="twitter:description" content="IHE Delft hydroinformatics study, research, and professional learning notes for Irfan Nazar.">
+  <meta name="twitter:description" content="IHE Delft MSc journey covering hydroinformatics, modelling, DSS, flood risk, and Nature-Based Solutions thesis research.">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "IHE Journey - Irfan Nazar",
     "url": "https://www.irfannazar.com/ihe-journey.html",
-    "description": "IHE Delft journey, hydroinformatics study, research, and professional learning notes for Irfan Nazar.",
+    "description": "IHE Delft MSc Water Science and Engineering journey covering hydroinformatics, modelling, decision support systems, flood risk, and Nature-Based Solutions thesis research.",
     "author": {
       "@type": "Person",
       "name": "Irfan Nazar",
@@ -125,8 +125,107 @@
       background: var(--bg-tertiary);
     }
 
+    .journey-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 24px 0;
+    }
+
+    .journey-metric {
+      background: #FFFFFF;
+      border: 1px solid var(--border-line);
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .journey-metric strong {
+      display: block;
+      color: var(--accent-cyan);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.55rem;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .journey-metric span {
+      display: block;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+    }
+
+    .journey-section {
+      margin-top: 30px;
+    }
+
+    .journey-section h3 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+
+    .journey-course-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .journey-course {
+      background: #FFFFFF;
+      border: 1px solid var(--border-line);
+      border-radius: 8px;
+      padding: 13px 14px;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    .journey-course strong {
+      display: block;
+      color: var(--text-main);
+      font-size: 0.95rem;
+      margin-bottom: 2px;
+    }
+
+    .journey-timeline {
+      display: grid;
+      gap: 12px;
+    }
+
+    .journey-timeline-item {
+      display: grid;
+      grid-template-columns: 104px 1fr;
+      gap: 16px;
+      background: #FFFFFF;
+      border: 1px solid var(--border-line);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .journey-timeline-item span {
+      color: var(--accent-amber);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .journey-timeline-item p {
+      margin-bottom: 0;
+    }
+
     @media (max-width: 900px) {
       .journey-page-shell {
+        grid-template-columns: 1fr;
+      }
+
+      .journey-metrics,
+      .journey-course-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .journey-timeline-item {
         grid-template-columns: 1fr;
       }
     }
@@ -176,38 +275,86 @@
             <span>IHE DELFT</span><span>HYDROINFORMATICS</span><span>JOURNEY</span>
           </div>
           <h1 style="font-size: clamp(2rem, 3.8vw, 3.2rem); font-weight:700;">IHE Journey</h1>
-          <p>Separate page for MSc study, research notes, conference details, certificates, photos, and extended IHE Delft experience.</p>
+          <p>MSc Water Science and Engineering journey at IHE Delft, focused on Hydroinformatics: Modelling and Information Systems for Water Management.</p>
         </div>
 
         <div class="journey-page-shell">
           <aside class="journey-panel">
             <img src="assets/images/ihe-delft-logo.png" alt="IHE Delft Institute for Water Education logo">
             <h2>MSc Water Science &amp; Engineering</h2>
-            <p>Hydroinformatics specialization at IHE Delft Institute for Water Education, Delft, Netherlands.</p>
+            <p>Hydroinformatics: Modelling and Information Systems for Water Management. Awarded 11 April 2023 in Delft, Netherlands.</p>
             <div class="chip-list" style="display:flex; flex-wrap:wrap; gap:6px;">
               <span class="chip">IHE Delft</span>
               <span class="chip">Hydroinformatics</span>
-              <span class="chip">Water Science</span>
-              <span class="chip">MSc Journey</span>
+              <span class="chip">106 ECTS</span>
+              <span class="chip">Average 8.3/10</span>
+              <span class="chip">NVAO Accredited</span>
             </div>
           </aside>
 
           <article class="journey-placeholder">
-            <h2>Detailed IHE Journey Placeholder</h2>
-            <p>This page is ready for the full IHE Journey details you will add later, including coursework, thesis work, conferences, field visits, certificates, research outputs, and photographs.</p>
+            <h2>Hydroinformatics study, modelling, and thesis research</h2>
+            <p>
+              The IHE Delft MSc strengthened my technical base in hydrological and hydraulic processes, computational methods, data science, decision support systems, modelling, forecasting, and the use of information systems for water management.
+            </p>
 
-            <div class="journey-dropzone">
-              <h3>Content Area</h3>
-              <p style="margin-bottom:0;">Add your detailed IHE Delft story here when you are ready.</p>
+            <div class="journey-metrics">
+              <div class="journey-metric">
+                <strong>2023</strong>
+                <span>MSc awarded</span>
+              </div>
+              <div class="journey-metric">
+                <strong>106</strong>
+                <span>ECTS credits</span>
+              </div>
+              <div class="journey-metric">
+                <strong>8.3</strong>
+                <span>Overall average</span>
+              </div>
+              <div class="journey-metric">
+                <strong>8.0</strong>
+                <span>Thesis result</span>
+              </div>
             </div>
 
-            <div class="journey-lines" aria-hidden="true">
-              <span style="width: 92%;"></span>
-              <span style="width: 80%;"></span>
-              <span style="width: 96%;"></span>
-              <span style="width: 72%;"></span>
-              <span style="width: 88%;"></span>
-              <span style="width: 64%;"></span>
+            <div class="journey-section">
+              <h3>Thesis</h3>
+              <div class="journey-dropzone">
+                <h3>Investigating the effectiveness of Nature-Based Solutions</h3>
+                <p style="margin-bottom:0;">MSc thesis on Nature-Based Solutions for climate change adaptation in the Aa of Weerijs catchment, the Netherlands. The research was approved by an examination committee chaired by Dr. S.J. van Andel.</p>
+              </div>
+            </div>
+
+            <div class="journey-section">
+              <h3>Core coursework</h3>
+              <div class="journey-course-grid">
+                <div class="journey-course"><strong>Hydrology and Hydraulics</strong>Hydrological and hydraulic process foundations.</div>
+                <div class="journey-course"><strong>Information Technology and Software Engineering</strong>Programming and software methods for water-sector systems.</div>
+                <div class="journey-course"><strong>Modelling Theory and Computational Hydraulics</strong>Numerical modelling and computational approaches.</div>
+                <div class="journey-course"><strong>Modelling and Information Systems Development</strong>Hydroinformatics system design and implementation.</div>
+                <div class="journey-course"><strong>Computational Intelligence and Operational Water Management</strong>Data-driven methods for operational decisions.</div>
+                <div class="journey-course"><strong>River Basin Modelling</strong>Catchment-scale modelling and water management analysis.</div>
+                <div class="journey-course"><strong>River Flood Analysis and Modelling</strong>Flood dynamics, modelling, and risk interpretation.</div>
+                <div class="journey-course"><strong>Decision Support Systems in the Water Domain</strong>Monitoring, modelling, forecasting, optimization, and decision support.</div>
+              </div>
+            </div>
+
+            <div class="journey-section">
+              <h3>Study timeline</h3>
+              <div class="journey-timeline">
+                <div class="journey-timeline-item">
+                  <span>2021</span>
+                  <p>Started MSc-level Water Science and Engineering coursework, including introduction to water and development and water science and engineering.</p>
+                </div>
+                <div class="journey-timeline-item">
+                  <span>2022</span>
+                  <p>Completed the main Hydroinformatics modules, including river basin modelling, river flood analysis, flood risk management, DSS, fieldwork, groupwork, and data visualisation.</p>
+                </div>
+                <div class="journey-timeline-item">
+                  <span>2023</span>
+                  <p>Completed MSc research, thesis, and defence on Nature-Based Solutions for climate adaptation, earning the Master of Science degree on 11 April 2023.</p>
+                </div>
+              </div>
             </div>
           </article>
         </div>
