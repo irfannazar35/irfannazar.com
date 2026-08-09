@@ -512,7 +512,6 @@
   --card-surface: #FFFBEB;
   --card-pill: #FEF3C7;
   --card-border: #FDE68A;
-  grid-column: span 2;
 }
 
 .expertise-field {
@@ -520,7 +519,6 @@
   --card-surface: #F0FDFA;
   --card-pill: #CCFBF1;
   --card-border: #99F6E4;
-  grid-column: span 2;
 }
 
 .expertise-flood {
@@ -528,7 +526,6 @@
   --card-surface: #EFF6FF;
   --card-pill: #DBEAFE;
   --card-border: #BFDBFE;
-  grid-column: span 2;
 }
 
 /* ---------- SELECTED WORK / PROJECTS ---------- */
@@ -873,12 +870,6 @@
   .institution-stack-item.primary img {
     width: min(220px, 100%);
     margin: 0 auto;
-  }
-
-  .expertise-delivery,
-  .expertise-field,
-  .expertise-flood {
-    grid-column: auto;
   }
 
   .hero-section {
