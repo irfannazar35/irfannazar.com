@@ -26,6 +26,7 @@ class DamSimulation {
       this.slider.addEventListener('input', (e) => {
         this.waterHeightPercent = parseFloat(e.target.value);
         this.updateReadout();
+        this.draw();
       });
     }
 
@@ -35,13 +36,23 @@ class DamSimulation {
       this.draw();
     });
 
-    this.animate();
+    this.motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
+    this.isVisible = false;
+    const updateAnimation = () => {
+      cancelAnimationFrame(this.animationFrame);
+      if (this.isVisible && !document.hidden && !this.motionPreference.matches) this.animate();
+      else this.draw();
+    };
+    new IntersectionObserver(entries => { this.isVisible = entries[0].isIntersecting; updateAnimation(); }).observe(this.canvas);
+    document.addEventListener('visibilitychange', updateAnimation);
+    this.motionPreference.addEventListener('change', updateAnimation);
+    this.draw();
   }
 
   resizeCanvas() {
     const container = this.canvas.parentElement;
     if (container) {
-      this.canvas.width = container.clientWidth - 40;
+      this.canvas.width = 560;
       this.canvas.height = 320;
     }
   }
@@ -74,9 +85,9 @@ class DamSimulation {
     const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
 
     // Colors based on theme
-    const waterFillColor = isDark ? 'rgba(34, 197, 94, 0.22)' : 'rgba(34, 197, 94, 0.2)';
+    const waterFillColor = isDark ? 'rgba(0, 145, 185, 0.22)' : 'rgba(0, 145, 185, 0.2)';
     const floodFillColor = isDark ? 'rgba(14, 165, 233, 0.2)' : 'rgba(14, 165, 233, 0.18)';
-    const waterStrokeColor = isDark ? '#22C55E' : '#16A34A';
+    const waterStrokeColor = isDark ? '#087e9e' : '#087e9e';
     const spillWaterColor = isDark ? '#38BDF8' : '#0284C7';
     const damFillColor = isDark ? '#94A3B8' : '#D7E2DC';
     const damStrokeColor = isDark ? '#123326' : '#123326';

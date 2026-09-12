@@ -131,7 +131,7 @@ class ProjectManager {
       : PROJECTS_DATA.filter(p => p.category === this.currentFilter);
 
     grid.innerHTML = filtered.map(p => `
-      <div class="project-card" data-id="${p.id}">
+      <div class="project-card" data-id="${p.id}" role="button" tabindex="0" aria-label="Read case study: ${p.title}" aria-haspopup="dialog">
         <div class="project-pid">${p.pid}</div>
         <h3>${p.title}</h3>
         <p>${p.shortDesc}</p>
@@ -146,6 +146,9 @@ class ProjectManager {
     `).join('');
 
     grid.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); card.click(); }
+      });
       card.addEventListener('click', () => {
         const id = card.getAttribute('data-id');
         this.openModal(id);
@@ -156,18 +159,24 @@ class ProjectManager {
   setupModal() {
     const overlay = document.getElementById('projectModal');
     const closeBtn = document.getElementById('modalCloseBtn');
-    
-    if (closeBtn && overlay) {
-      closeBtn.addEventListener('click', () => {
-        overlay.classList.remove('active');
-      });
-
-      overlay.addEventListener('click', (e) => {
-        if (e.target === overlay) {
-          overlay.classList.remove('active');
-        }
-      });
-    }
+    if (!overlay || !closeBtn) return;
+    this.closeModal = () => {
+      overlay.classList.remove('active');
+      overlay.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      this.previousFocus?.focus();
+    };
+    closeBtn.addEventListener('click', this.closeModal);
+    overlay.addEventListener('click', event => { if (event.target === overlay) this.closeModal(); });
+    overlay.addEventListener('keydown', event => {
+      if (event.key === 'Escape') this.closeModal();
+      if (event.key === 'Tab') {
+        const items = [...overlay.querySelectorAll('button, a[href], input, [tabindex="0"]')].filter(el => !el.disabled);
+        const first = items[0], last = items[items.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }
+    });
   }
 
   openModal(projectId) {
@@ -182,7 +191,7 @@ class ProjectManager {
         <div style="margin-bottom: 12px; font-family:'JetBrains Mono', monospace; color:var(--accent-amber); font-size:0.85rem;">
           ${project.pid} · CASE STUDY
         </div>
-        <h2 style="font-size: clamp(1.5rem, 2.5vw, 2.2rem); margin-bottom: 16px; font-weight:700;">${project.title}</h2>
+        <h2 id="caseStudyTitle" style="font-size: clamp(1.5rem, 2.5vw, 2.2rem); margin-bottom: 16px; font-weight:700;">${project.title}</h2>
         
         <img src="${project.image}" alt="${project.title}" style="width:100%; height:220px; object-fit:contain; background:#fff; border-radius:10px; border:1px solid var(--border-line); margin-bottom:20px; padding:14px;">
         
@@ -211,7 +220,12 @@ class ProjectManager {
         </div>
       `;
 
+      this.previousFocus = document.activeElement;
       overlay.classList.add('active');
+      overlay.setAttribute('aria-hidden', 'false');
+      overlay.querySelector('.modal-content').scrollTop = 0;
+      document.body.style.overflow = 'hidden';
+      document.getElementById('modalCloseBtn').focus();
     }
   }
 }

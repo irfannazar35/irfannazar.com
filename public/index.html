@@ -85,8 +85,11 @@
   <link rel="stylesheet" href="css/main.css?v=20260809-green2">
   <link rel="stylesheet" href="css/components.css?v=20260809-green2">
   <link rel="stylesheet" href="css/sections.css?v=20260809-green2">
+  <link rel="stylesheet" href="css/premium.css?v=20260912">
 </head>
-<body>
+<body class="premium">
+<a class="skip-link" href="#about">Skip to content</a>
+<div class="reading-progress" aria-hidden="true"></div>
 
   <!-- Technical Grid Texture Overlay -->
   <div class="grid-bg-overlay" aria-hidden="true"></div>
@@ -111,7 +114,7 @@
           <li><a href="#work">Selected Work</a></li>
           <li><a href="channel-designer.html">Tools</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="public-alerts.html">Public Service Information</a></li>
+          <li><a href="public-alerts.html">Public information</a></li>
         </ul>
       </nav>
 
@@ -123,61 +126,26 @@
 
   <main id="top">
 
-    <!-- HERO SECTION -->
-    <section class="hero-section">
+    <section class="hero-section" aria-labelledby="heroHeading">
+      <div class="hero-contours" aria-hidden="true"></div>
       <div class="container hero-grid">
-        <div>
-          <div class="hero-telemetry-badge">
-            <span class="status-dot"></span>
-            <span>16 SMALL DAMS MONITORED · POTOHAR ZONE</span>
-          </div>
-
-          <h1 class="hero-title">
-            Engineering resilient <span class="highlight">water systems</span> &amp; hydroinformatics.
-          </h1>
-
-          <p class="hero-subtitle">
-            Executive Engineer with the Punjab Irrigation Department and water resources specialist focused on dam safety, flood-risk reduction, hydrological and hydraulic modeling, GIS, and data-driven decision support for resilient water systems.
-          </p>
-
-          <div class="hero-credentials">
-            <span>MSc WATER SCIENCE &amp; ENGINEERING — HYDROINFORMATICS (IHE DELFT, NETHERLANDS)</span>
-            <span>BSc CIVIL ENGINEERING — UET TAXILA, PAKISTAN</span>
-            <span>REGISTERED PROFESSIONAL ENGINEER — PAKISTAN</span>
-          </div>
-
-          <div class="affiliation-strip">
-            <img src="assets/images/punjab-irrigation-logo.jpg" alt="Punjab Irrigation Department logo">
-            <div>
-              <strong>Punjab Irrigation Department</strong>
-              <span>Most applied engineering, dam safety, public works, and field delivery experience.</span>
-            </div>
-          </div>
-
-          <div class="hero-ctas">
-            <a href="#work" class="btn btn-primary">Explore Selected Work →</a>
-            <a href="ihe-journey.html" class="btn btn-secondary">IHE Journey</a>
-          </div>
+        <div class="hero-copy">
+          <p class="eyebrow">IRFAN NAZAR / WATER RESOURCES ENGINEER</p>
+          <h1 class="hero-title" id="heroHeading">Water shapes<br>our world.<br><span class="highlight">I engineer<br>its future.</span></h1>
+          <p class="hero-subtitle">Connecting hydraulic engineering, digital intelligence, and field experience to build more resilient water systems.</p>
+          <div class="hero-ctas"><a href="#work" class="btn btn-primary">Explore my work <span aria-hidden="true">?</span></a><a href="#about" class="hero-text-link">Meet Irfan <span aria-hidden="true">?</span></a></div>
+          <div class="hero-note"><span>EXECUTIVE ENGINEER</span><span>Punjab Irrigation Department<br>Jhelum, Pakistan</span></div>
         </div>
-
-        <!-- Interactive Dam & Reservoir Schematic Canvas -->
-        <div class="hero-canvas-container">
-          <div class="canvas-header">
-            <span>REAL-TIME HYDRODYNAMIC RESERVOIR SIMULATOR</span>
-            <span class="font-mono" style="color:var(--accent-cyan);" id="waterReadout">75% STORAGE</span>
-          </div>
-
-          <canvas id="damCanvas" width="480" height="320"></canvas>
-
-          <div class="canvas-controls">
-            <span>RESERVOIR LEVEL:</span>
-            <input type="range" id="waterSlider" min="0" max="120" value="75" aria-label="Adjust Reservoir Water Level">
-            <span style="color:var(--accent-amber);">INTERACTIVE GAUGE</span>
-          </div>
-        </div>
+        <figure class="portrait-stage">
+          <div class="portrait-orbit" aria-hidden="true"></div>
+          <img src="assets/images/profile.jpg" alt="Irfan Nazar, water resources engineer" width="640" height="800" fetchpriority="high" class="hero-portrait">
+          <figcaption><span>THE FIELD. THE SCIENCE. THE SYSTEMS.</span><strong>Engineering with purpose.</strong></figcaption>
+          <div class="portrait-marker"><span>16</span>small dams<br>managed</div>
+        </figure>
       </div>
+      <div class="container hero-bottom"><span>FROM PUNJAB TO DELFT. FROM INSIGHT TO IMPACT.</span><a href="#about">Scroll to discover ?</a></div>
     </section>
-
+    <div class="credential-ribbon"><div class="container"><span>PUBLIC SERVICE ? DIGITAL INNOVATION</span><strong>Punjab Irrigation Department</strong><strong>IHE Delft <small>Netherlands</small></strong><strong>UET Taxila <small>Pakistan</small></strong></div></div>
     <!-- ABOUT SECTION -->
     <section id="about" class="alt-bg">
       <div class="container">
@@ -185,7 +153,7 @@
           <div class="tech-titleblock">
             <span>SHEET</span><span>01</span><span>SECTION</span><span>PROFILE</span>
           </div>
-          <h2>Bridge between hydraulic engineering &amp; digital intelligence</h2>
+          <h2>Grounded in the field.<br>Driven by possibility.</h2>
         </div>
 
         <div class="about-grid">
@@ -258,7 +226,7 @@
           <div class="tech-titleblock">
             <span>SHEET</span><span>03</span><span>SECTION</span><span>EXPERTISE</span>
           </div>
-          <h2>Where hydraulic engineering &amp; digital tools meet</h2>
+          <h2>A multidisciplinary perspective.</h2>
           <p>Core engineering domains covering operations, risk modeling, spatial GIS, and automated tooling.</p>
         </div>
 
@@ -394,7 +362,7 @@
           <div class="tech-titleblock">
             <span>SHEET</span><span>04</span><span>SECTION</span><span>SELECTED WORK</span>
           </div>
-          <h2>Selected engineering projects &amp; systems</h2>
+          <h2>Engineering in action.</h2>
           <p>Sample projects spanning dam safety, real-time flood warning, geospatial pipelines, and government TOR procurement.</p>
         </div>
 
@@ -412,6 +380,10 @@
       </div>
     </section>
 
+    <section class="water-lab" id="water-lab">
+      <div class="container lab-grid"><div><p class="eyebrow">AN INTERACTIVE EXPLORATION</p><h2>A feel for<br>the flow.</h2><p>Move the reservoir level and explore how water interacts with a dam and spillway.</p><p class="lab-disclaimer">Illustrative simulation, not live monitoring or an engineering design calculation.</p><a class="btn btn-secondary" href="channel-designer.html">Open channel designer ?</a></div>
+      <div class="hero-canvas-container"><div class="canvas-header"><span>RESERVOIR EXPLORER</span><span id="waterReadout">75% STORAGE</span></div><canvas id="damCanvas" width="480" height="320" aria-label="Illustrative reservoir and spillway cross-section">Use the reservoir slider to explore water levels.</canvas><div class="canvas-controls"><label for="waterSlider">Water level</label><input type="range" id="waterSlider" min="0" max="120" value="75" aria-label="Adjust reservoir water level"></div></div></div>
+    </section>
     <!-- NUMBERS BANNER STATS -->
     <section class="alt-bg">
       <div class="container">
@@ -624,7 +596,7 @@
 
   <!-- PROJECT CASE STUDY MODAL -->
   <div class="modal-overlay" id="projectModal" aria-hidden="true">
-    <div class="modal-content">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="caseStudyTitle">
       <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">✕</button>
       <div id="modalBodyContent"></div>
     </div>
@@ -636,6 +608,7 @@
   <script src="js/projects.js"></script>
   <script src="js/contact.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/premium.js"></script>
 
 </body>
 </html>
