@@ -10,3 +10,12 @@
 @media(max-width:1100px){.premium .nav-menu{display:none;position:absolute;top:84px;left:0;right:0;background:#102c40;padding:20px;flex-direction:column;align-items:stretch;gap:8px}.premium .nav-menu.open{display:flex}.premium .nav-menu a{display:block;font-size:1rem}.premium .mobile-toggle{display:flex}.premium .hero-title{font-size:clamp(3rem,6.8vw,5rem)}.hero-portrait{height:470px}.portrait-marker{right:-10px}.premium .brand-title{font-size:.6rem}}
 @media(max-width:760px){.premium section{padding-block:70px}.premium .hero-section{padding-top:44px}.premium .hero-grid{grid-template-columns:1fr;gap:32px}.premium .hero-title{font-size:clamp(3.3rem,12vw,5.4rem)}.premium .hero-subtitle{font-size:1rem}.portrait-stage{max-width:430px;width:90%;margin:auto}.hero-portrait{height:440px}.hero-bottom{margin-top:10px;gap:20px;line-height:1.7}.hero-bottom>span{max-width:180px}.credential-ribbon>.container{display:grid;grid-template-columns:1fr 1fr;gap:24px}.credential-ribbon strong{font-size:.8rem}.premium .about-grid,.lab-grid{grid-template-columns:1fr;gap:32px}.premium .hero-note{gap:16px}.premium .canvas-controls{padding:12px}.premium .canvas-controls input{min-width:0}.premium .projects-grid{grid-template-columns:1fr}.premium .contact-grid{grid-template-columns:1fr}.premium .contact-grid>.card{padding:24px!important}.premium .c-field{grid-template-columns:80px 1fr}.premium .stats-banner{grid-template-columns:1fr 1fr}.premium .research-grid{grid-template-columns:1fr}.premium .project-filter-bar{flex-wrap:wrap}.premium .filter-btn{font-size:.75rem}.premium .hero-canvas-container{padding:16px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.premium *, .premium *:before,.premium *:after{animation:none!important;transition:none!important}.reveal-ready{opacity:1;transform:none}}
+
+/* Portfolio clarity and archived-report usability. */
+.premium .hero-title{font-size:clamp(2.25rem,4.2vw,4.2rem);overflow-wrap:break-word}
+.premium .hero-copy,.info-shell>*,.gauge-dashboard{min-width:0}
+[hidden]{display:none!important}
+.archive-notice{margin-bottom:32px;border-left-color:#9a6700;background:#fff8e6}
+.archive-notice h2{font-size:1.25rem;margin-bottom:10px}
+.gauge-table caption{text-align:left;padding:14px 16px;color:var(--text-muted);background:#f8fafc;font-size:.85rem}
+@media(max-width:760px){.premium .hero-title{font-size:clamp(2.1rem,8.2vw,3.5rem)}}
