@@ -111,6 +111,7 @@ class ProjectManager {
   setupFilters() {
     const filterContainer = document.getElementById('projectFilters');
     if (!filterContainer) return;
+    filterContainer.hidden = false;
 
     filterContainer.addEventListener('click', (e) => {
       if (e.target.classList.contains('filter-btn')) {
