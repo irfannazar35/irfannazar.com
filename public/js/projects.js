@@ -3,6 +3,275 @@
    ========================================================================== */
 
 const PROJECTS_DATA = [
+{
+  "id": "tpv-four-dams",
+  "pid": "TPV",
+  "category": "procurement",
+  "title": "Hiring of Consultancy Services for Third Party Validation of Quality and Quantity of Remaining Packages of Dharab Dam, Uthwal/Lakhwal Dam, Shah Habib Dam and Fateh Pur Dam of Irrigation Potohar Zone",
+  "shortDesc": "Third-party validation of quality and quantity for the remaining packages at Dharab, Uthwal/Lakhwal, Shah Habib and Fateh Pur dams.",
+  "fullDesc": "Third-party validation of quality and quantity for the remaining packages at Dharab, Uthwal/Lakhwal, Shah Habib and Fateh Pur dams. Listed as a project you are involved in, based on the title you supplied. Your specific responsibilities, project period, implementation stage and deliverables will be added after your verification.",
+  "tags": [
+    "Third Party Validation",
+    "Quality & Quantity",
+    "Consultancy Services"
+  ],
+  "metrics": "Details pending your verification",
+  "image": "assets/images/punjab-irrigation-logo.jpg",
+  "client": "Department / commissioning office to be confirmed",
+  "impact": "Deliverables and outcomes to be confirmed.",
+  "draft": true,
+  "reviewNotes": "Project title supplied by you. Confirm the official spelling and scope, your role, dates, current status, commissioning office and any outcomes before publication."
+},
+{
+  "id": "mohra-shera-construction",
+  "pid": "MOHRA SHERA",
+  "category": "damsafety",
+  "title": "Construction of Mohra Shera Dam",
+  "shortDesc": "Construction of Mohra Shera Dam.",
+  "fullDesc": "Construction of Mohra Shera Dam. Listed as a project you are involved in, based on the title you supplied. Your specific responsibilities, project period, implementation stage and deliverables will be added after your verification.",
+  "tags": [
+    "Dam Construction",
+    "Water Infrastructure"
+  ],
+  "metrics": "Details pending your verification",
+  "image": "assets/images/punjab-irrigation-logo.jpg",
+  "client": "Department / commissioning office to be confirmed",
+  "impact": "Deliverables and outcomes to be confirmed.",
+  "draft": true,
+  "reviewNotes": "Project title supplied by you. Confirm the official spelling and scope, your role, dates, current status, commissioning office and any outcomes before publication."
+},
+{
+  "id": "problematic-small-dams",
+  "pid": "DEVELOPMENT ZONE",
+  "category": "damsafety",
+  "title": "Feasibility Study and Proposing Solutions of Problematic Small Dams in Development Zone",
+  "shortDesc": "Feasibility study and development of proposed solutions for problematic small dams in Development Zone.",
+  "fullDesc": "Feasibility study and development of proposed solutions for problematic small dams in Development Zone. Listed as a project you are involved in, based on the title you supplied. Your specific responsibilities, project period, implementation stage and deliverables will be added after your verification.",
+  "tags": [
+    "Feasibility Study",
+    "Small Dams",
+    "Remedial Solutions"
+  ],
+  "metrics": "Details pending your verification",
+  "image": "assets/images/punjab-irrigation-logo.jpg",
+  "client": "Department / commissioning office to be confirmed",
+  "impact": "Deliverables and outcomes to be confirmed.",
+  "draft": true,
+  "reviewNotes": "Project title supplied by you. Confirm the official spelling and scope, your role, dates, current status, commissioning office and any outcomes before publication."
+},
+{
+  "id": "domeli-lehri-rehabilitation",
+  "pid": "DOMELI / LEHRI",
+  "category": "damsafety",
+  "title": "Rehabilitation and Remodeling of Main Dam, Spillway and Irrigation System of Domeli and Lehri Dam, District Jhelum",
+  "shortDesc": "Rehabilitation and remodeling of the main dam, spillway and irrigation system at Domeli and Lehri dams in District Jhelum.",
+  "fullDesc": "Rehabilitation and remodeling of the main dam, spillway and irrigation system at Domeli and Lehri dams in District Jhelum. Listed as a project you are involved in, based on the title you supplied. Your specific responsibilities, project period, implementation stage and deliverables will be added after your verification.",
+  "tags": [
+    "Dam Rehabilitation",
+    "Spillways",
+    "Irrigation Systems"
+  ],
+  "metrics": "Details pending your verification",
+  "image": "assets/images/punjab-irrigation-logo.jpg",
+  "client": "Department / commissioning office to be confirmed",
+  "impact": "Deliverables and outcomes to be confirmed.",
+  "draft": true,
+  "reviewNotes": "Project title supplied by you. Confirm the official spelling and scope, your role, dates, current status, commissioning office and any outcomes before publication."
+},
+{
+  "id": "tainpura-gurah-rehabilitation",
+  "pid": "TAINPURA / GURAH",
+  "category": "damsafety",
+  "title": "Rehabilitation and Operationalization of Small Dams in Potohar Zone — Tainpura Dam & Gurah Uttam Singh Dam",
+  "shortDesc": "Rehabilitation and operationalization work concerning Tainpura Dam and Gurah Uttam Singh Dam in Potohar Zone.",
+  "fullDesc": "Rehabilitation and operationalization work concerning Tainpura Dam and Gurah Uttam Singh Dam in Potohar Zone. Listed as a project you are involved in, based on the title you supplied. Your specific responsibilities, project period, implementation stage and deliverables will be added after your verification.",
+  "tags": [
+    "Rehabilitation",
+    "Operationalization",
+    "Small Dams"
+  ],
+  "metrics": "Details pending your verification",
+  "image": "assets/images/punjab-irrigation-logo.jpg",
+  "client": "Department / commissioning office to be confirmed",
+  "impact": "Deliverables and outcomes to be confirmed.",
+  "draft": true,
+  "reviewNotes": "Project title supplied by you. Confirm the official spelling and scope, your role, dates, current status, commissioning office and any outcomes before publication."
+},
+{
+  "id": "engineering-chakbandi",
+  "pid": "CHAKBANDI",
+  "category": "procurement",
+  "title": "Short-Term Consultancy Services for Preparation of Engineering Chakbandi Plan of Existing Small Dams in Irrigation Potohar Zone Rawalpindi / Islamabad",
+  "shortDesc": "Consultancy services for preparation of engineering chakbandi plans for existing small dams in Irrigation Potohar Zone, Rawalpindi / Islamabad.",
+  "fullDesc": "Consultancy services for preparation of engineering chakbandi plans for existing small dams in Irrigation Potohar Zone, Rawalpindi / Islamabad. Listed as a project you are involved in, based on the title you supplied. Your specific responsibilities, project period, implementation stage and deliverables will be added after your verification.",
+  "tags": [
+    "Engineering Chakbandi",
+    "Irrigation Planning",
+    "Consultancy Services"
+  ],
+  "metrics": "Details pending your verification",
+  "image": "assets/images/punjab-irrigation-logo.jpg",
+  "client": "Department / commissioning office to be confirmed",
+  "impact": "Deliverables and outcomes to be confirmed.",
+  "draft": true,
+  "reviewNotes": "Project title supplied by you. Confirm the official spelling and scope, your role, dates, current status, commissioning office and any outcomes before publication."
+},
+{
+  "id": "jammargal-irrigation",
+  "pid": "JAMMARGAL",
+  "category": "damsafety",
+  "title": "Rehabilitation of Irrigation System of Jammargal Dam",
+  "shortDesc": "Rehabilitation of the irrigation system serving Jammargal Dam.",
+  "fullDesc": "Rehabilitation of the irrigation system serving Jammargal Dam. Listed as a project you are involved in, based on the title you supplied. Your specific responsibilities, project period, implementation stage and deliverables will be added after your verification.",
+  "tags": [
+    "Irrigation Rehabilitation",
+    "Small Dams"
+  ],
+  "metrics": "Details pending your verification",
+  "image": "assets/images/punjab-irrigation-logo.jpg",
+  "client": "Department / commissioning office to be confirmed",
+  "impact": "Deliverables and outcomes to be confirmed.",
+  "draft": true,
+  "reviewNotes": "Project title supplied by you. Confirm the official spelling and scope, your role, dates, current status, commissioning office and any outcomes before publication."
+},
+{
+  "id": "soan-geospatial-mapping",
+  "pid": "SOAN / MAPPING",
+  "category": "gis",
+  "title": "Geospatial Mapping of the Reservoir and Command Area of Potential Sites of Soan Basin Through Ortho Rectified Satellite Imagery 15cm HD and Optical Stereo Satellite Imagery 30cm",
+  "shortDesc": "Geospatial mapping of reservoir and command areas for potential Soan Basin sites using the satellite-imagery specifications in the project title.",
+  "fullDesc": "Geospatial mapping of reservoir and command areas for potential Soan Basin sites using the satellite-imagery specifications in the project title. Listed as a project you are involved in, based on the title you supplied. Your specific responsibilities, project period, implementation stage and deliverables will be added after your verification.",
+  "tags": [
+    "Geospatial Mapping",
+    "Reservoir & Command Area",
+    "Satellite Imagery"
+  ],
+  "metrics": "Details pending your verification",
+  "image": "assets/images/punjab-irrigation-logo.jpg",
+  "client": "Department / commissioning office to be confirmed",
+  "impact": "Deliverables and outcomes to be confirmed.",
+  "draft": true,
+  "reviewNotes": "Project title supplied by you. Confirm the official spelling and scope, your role, dates, current status, commissioning office and any outcomes before publication."
+},
+{
+  "id": "soan-geotechnical",
+  "pid": "SOAN / GEOTECHNICAL",
+  "category": "damsafety",
+  "title": "Geotechnical Investigation for Potential Sites Under Feasibility Study for Exploring Water Potential of Soan River",
+  "shortDesc": "Geotechnical investigation for potential sites under the Soan River water-potential feasibility study.",
+  "fullDesc": "Geotechnical investigation for potential sites under the Soan River water-potential feasibility study. Listed as a project you are involved in, based on the title you supplied. Your specific responsibilities, project period, implementation stage and deliverables will be added after your verification.",
+  "tags": [
+    "Geotechnical Investigation",
+    "Potential Sites",
+    "Soan River Study"
+  ],
+  "metrics": "Details pending your verification",
+  "image": "assets/images/punjab-irrigation-logo.jpg",
+  "client": "Department / commissioning office to be confirmed",
+  "impact": "Deliverables and outcomes to be confirmed.",
+  "draft": true,
+  "reviewNotes": "Project title supplied by you. Confirm the official spelling and scope, your role, dates, current status, commissioning office and any outcomes before publication."
+},
+{
+  "id": "bakrala-la",
+  "pid": "BAKRALA",
+  "category": "procurement",
+  "title": "Bakrala Dam — Project Preparation & Land Acquisition",
+  "shortDesc": "Project preparation and land-acquisition documentation for the proposed Bakrala Dam in Tehsil Sohawa, District Jhelum.",
+  "fullDesc": "Draft portfolio description: involvement in preparing and refining the land-acquisition PC-I narrative, project justification and executive summary for the proposed Bakrala Dam. The work connects the proposed reservoir and irrigation scheme with the land requirements needed for implementation.",
+  "tags": [
+    "Project Preparation",
+    "PC-I",
+    "Land Acquisition",
+    "Small Dams"
+  ],
+  "client": "Punjab Irrigation Department",
+  "impact": "Project preparation and documentation; approval and implementation status to be confirmed.",
+  "reviewNotes": "Confirm your personal role, official project title, dates, PC-I status and whether technical parameters may be published.",
+  "draft": true,
+  "metrics": "Draft — pending your verification",
+  "image": "assets/images/punjab-irrigation-logo.jpg"
+},
+{
+  "id": "soan-study",
+  "pid": "SOAN",
+  "category": "procurement",
+  "title": "Feasibility Study for Exploring Water Potential of Soan River",
+  "shortDesc": "Study coordination and project administration for exploring the water potential of the Soan River.",
+  "fullDesc": "Draft portfolio description: involvement in coordinating the feasibility-study process and preparing project correspondence, explanatory memoranda and funding documentation. Prior drafting discussions refer to consultant coordination and the administrative steps needed to progress and close out the study; the exact responsibilities and current stage require confirmation.",
+  "tags": [
+    "Water Resources Planning",
+    "Feasibility Study",
+    "Consultant Coordination",
+    "Project Administration"
+  ],
+  "client": "Punjab Irrigation Department",
+  "impact": "Study coordination and administrative support; final deliverables and completion status to be confirmed.",
+  "reviewNotes": "Confirm your role, study period, consultant attribution, completed deliverables and current status. No funding amounts or completion claims are included.",
+  "draft": true,
+  "metrics": "Draft — pending your verification",
+  "image": "assets/images/punjab-irrigation-logo.jpg"
+},
+{
+  "id": "ratrian-irrigation",
+  "pid": "RATRIAN",
+  "category": "procurement",
+  "title": "Ratrian Dam — Irrigation Design Review Coordination",
+  "shortDesc": "Coordination of draft irrigation-system designs, drawings and cost estimates submitted under the Soan River study.",
+  "fullDesc": "Draft portfolio description: coordinating the forwarding of draft irrigation-system designs, drawings and cost estimates for Ratrian Dam to Small Dams Division, Fateh Jang, for technical review in accordance with departmental directions. This entry describes review coordination, rather than claiming personal authorship of the design.",
+  "tags": [
+    "Irrigation Systems",
+    "Design Review Coordination",
+    "Drawings & Estimates",
+    "Soan River Study"
+  ],
+  "client": "Punjab Irrigation Department",
+  "impact": "Facilitated the technical-review workflow; review findings and subsequent decisions to be confirmed.",
+  "reviewNotes": "Confirm the spelling of Ratrian, your contribution, relationship to the Soan River study, dates and review outcome.",
+  "draft": true,
+  "metrics": "Draft — pending your verification",
+  "image": "assets/images/punjab-irrigation-logo.jpg"
+},
+{
+  "id": "lehri-pindori-land",
+  "pid": "LAND",
+  "category": "procurement",
+  "title": "Lehri & Pindori Dams — Land Acquisition Follow-up",
+  "shortDesc": "Progress reporting and inter-agency coordination for outstanding land-acquisition and mutation matters.",
+  "fullDesc": "Draft portfolio description: involvement in consolidating land-acquisition and mutation progress for Lehri and Pindori dams, preparing status correspondence and coordinating follow-up with revenue authorities. Acquisition, compensation awards and mutation are treated as separate stages; this entry makes no claim that the pending cases have been resolved.",
+  "tags": [
+    "Land Acquisition",
+    "Progress Reporting",
+    "Revenue Coordination",
+    "Infrastructure Delivery"
+  ],
+  "client": "Small Dams Division, Jhelum",
+  "impact": "Consolidated status reporting and follow-up; resolution of outstanding cases to be confirmed.",
+  "reviewNotes": "Confirm dam-name spelling, your role, reporting period and latest status. Land areas and case-level correspondence are omitted pending verification.",
+  "draft": true,
+  "metrics": "Draft — pending your verification",
+  "image": "assets/images/punjab-irrigation-logo.jpg"
+},
+{
+  "id": "potohar-sites-map",
+  "pid": "POTOHAR",
+  "category": "gis",
+  "title": "Potohar Dam Sites — Consolidated Planning Map",
+  "shortDesc": "Consolidation of approved and potential dam-site maps into a single planning and presentation view.",
+  "fullDesc": "Draft portfolio description: preparation and coordination of a combined presentation map distinguishing approved and potential dam sites using separate symbols, labels and legend entries. The source discussion refers to 13 approved and 8 potential sites. Locations were aligned from the supplied maps and were not independently verified against surveyed coordinates or GIS point data.",
+  "tags": [
+    "Planning Maps",
+    "Cartography",
+    "Site Identification",
+    "Technical Presentation"
+  ],
+  "client": "Potohar Small Dams Planning",
+  "impact": "A consolidated planning view; site classifications and positional accuracy require verification.",
+  "reviewNotes": "Confirm your contribution, the 13 approved and 8 potential site classifications, map date and coordinates before using the map as engineering evidence.",
+  "draft": true,
+  "metrics": "Draft — pending your verification",
+  "image": "assets/images/punjab-irrigation-logo.jpg"
+},
   {
     id: 'dss-16',
     pid: 'DSS · 16',
@@ -111,6 +380,7 @@ class ProjectManager {
   setupFilters() {
     const filterContainer = document.getElementById('projectFilters');
     if (!filterContainer) return;
+    filterContainer.hidden = false;
 
     filterContainer.addEventListener('click', (e) => {
       if (e.target.classList.contains('filter-btn')) {
@@ -132,7 +402,7 @@ class ProjectManager {
 
     grid.innerHTML = filtered.map(p => `
       <div class="project-card" data-id="${p.id}" role="button" tabindex="0" aria-label="Read case study: ${p.title}" aria-haspopup="dialog">
-        <div class="project-pid">${p.pid}</div>
+        <div class="project-pid">${p.pid}${p.draft ? ' · DRAFT FOR REVIEW' : ''}</div>
         <h3>${p.title}</h3>
         <p>${p.shortDesc}</p>
         <div class="chip-list" style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:16px;">
@@ -189,7 +459,7 @@ class ProjectManager {
     if (overlay && modalBody) {
       modalBody.innerHTML = `
         <div style="margin-bottom: 12px; font-family:'JetBrains Mono', monospace; color:var(--accent-amber); font-size:0.85rem;">
-          ${project.pid} · CASE STUDY
+          ${project.pid} · CASE STUDY${project.draft ? ' · DRAFT FOR REVIEW' : ''}
         </div>
         <h2 id="caseStudyTitle" style="font-size: clamp(1.5rem, 2.5vw, 2.2rem); margin-bottom: 16px; font-weight:700;">${project.title}</h2>
         
@@ -199,6 +469,7 @@ class ProjectManager {
           <strong>Executive Summary:</strong> ${project.shortDesc}
         </div>
 
+        ${project.draft ? `<div style="padding:16px; margin-bottom:20px; background:#fff8e6; color:#614600; border-left:3px solid #9a6700;"><strong>For your verification before publication</strong><p>${project.reviewNotes}</p></div>` : ''}
         <h4 style="margin-bottom:8px; font-size:1.1rem;">Full Scope & Methodology</h4>
         <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.6; margin-bottom:20px;">
           ${project.fullDesc}
